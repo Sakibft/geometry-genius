@@ -3,9 +3,11 @@
  <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.0/dist/full.min.css" rel="stylesheet" type="text/css" />
-<script src="https://cdn.tailwindcss.com"></script>
+  <title>D</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script> -->
+
 
  </head>
  <body class="m-8">
@@ -54,16 +56,16 @@
           <p class="text-center text-3xl">Area (A) = w X I</p>
           <div class="flex">
            <!-- LENGTH -->
-            <input class=" w-24 text-2xl p-2 rounded-sm" type="text" placeholder="length">
+            <input id="rectangle-length" class=" w-24 text-2xl p-2 rounded-sm" type="text" placeholder="length">
             <span class="mr-4 ml-2">cm</span>
             <!-- WEIGHT -->
-            <input class=" w-24 text-2xl p-2 rounded-sm" type="text" placeholder="weight">
+            <input id="rectangle-width" class=" w-24 text-2xl p-2 rounded-sm" type="text" placeholder="weight">
             <span class="mr-4 ml-2">cm</span>
           </div>
           <div>
-            <p>Area: 
-              <span></span>
-              <span></span>
+            <p class="text-2xl">Area: 
+              <span id="rectangle-area"></span>
+              <span>cm<sup>2</sup></span>
             </p>
           </div>
           <div class="card-actions">
@@ -71,13 +73,28 @@
           </div>
         </div>
       </div>
+      <!-- Parallelogram -->
       <div class="card w-96 bg-base-100 shadow-xl">
-        <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
+        <figure><img src="images/parallelogram.png" alt="Shoes" /></figure>
         <div class="card-body">
-          <h2 class="card-title">Shoes!</h2>
-          <p>If a dog chews shoes whose shoes does he choose?</p>
-          <div class="card-actions justify-end">
-            <button class="btn btn-primary">Buy Now</button>
+          <h2 class="text-2xl font-bold text-center">Parallelogram</h2>
+          <p class="text-3xl text-center">Area (A) = b X h </p>
+          <div class="flex text">
+            <!-- b -->
+            <input id="bsae-number" class="w-24 text-2xl p-2 rounded-sm" type="text"placeholder='base'>
+            <span class="mr-4 ml-2 text-2xl">cm</span>
+            <!-- h -->
+            <input id="height-input" class="w-24 text-2xl p-2 rounded-sm" type="text"placeholder="height">
+            <span class="mr-4 ml-2 text-2xl">cm</span>
+          </div>
+          <div>
+            <p class="text-2xl">Area: 
+              <span id="area-output"></span>
+              <span class="text-2xl">cm<sup>2</sup></span>
+            </p>
+          </div>
+          <div class="card-actions">
+            <button onclick="paralleogram()" class="btn btn-primary w-full">Buy Now</button>
           </div>
         </div>
       </div>
@@ -95,10 +112,12 @@
     <!-- area calculation container -->
     <div class="w-96 border-2 border-gray-700 rounded-md">
       <h3 class="text-3xl text-center p-4"> Area calculation</h3>
+      <h1>shs23r34ferf3453443544534qrferferfdh</h1>
 
     </div>
   </div>
   <script src="scripts/trigle.js"></script>
 <script src="scripts/rectangle.js"></script>
+<script src="scripts/parallelogram.js"></script>
 </body>
  </html>
